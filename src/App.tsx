@@ -14,7 +14,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-warm-cream">
+      <div className="min-h-screen bg-fresh-white">
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

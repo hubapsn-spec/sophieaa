@@ -4,19 +4,19 @@ import { Mail, Phone, MapPin, Instagram, Facebook, Youtube } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="bg-deep-brown text-warm-cream relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-deep-brown via-deep-brown/95 to-warm-brown/20"></div>
-      <div className="absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-warm-brown/10 rounded-full blur-3xl"></div>
+    <footer className="bg-dark-gray text-fresh-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-dark-gray via-dark-gray/95 to-energetic-blue/20"></div>
+      <div className="absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-energetic-blue/10 rounded-full blur-3xl"></div>
       
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-24">
         <div className="grid lg:grid-cols-4 gap-12 lg:gap-16">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="text-3xl lg:text-4xl font-serif font-light mb-6 lg:mb-8 text-warm-cream tracking-[0.15em]">
+            <div className="text-3xl lg:text-4xl font-serif font-light mb-6 lg:mb-8 text-fresh-white tracking-[0.15em]">
               SOPHIE WAGNER
             </div>
-            <p className="text-warm-cream/80 mb-8 lg:mb-12 font-light text-lg leading-relaxed max-w-md">
-              Certificeret Pilates instruktør og personal trainer med specialisering i 
+            <p className="text-fresh-white/80 mb-8 lg:mb-12 font-light text-lg leading-relaxed max-w-md">
+              Certificeret personal trainer med specialisering i 
               styrketræning, ernæring og mindfulness. Find din styrke, skab balance.
             </p>
             

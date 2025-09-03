@@ -4,12 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'warm-cream': '#F5F1E8',
-        'warm-beige': '#E8DCC6',
-        'warm-brown': '#8B6F47',
-        'deep-brown': '#6B4E3D',
-        'soft-brown': '#A0845C',
-        'light-brown': '#C4A882',
+        'energetic-blue': '#2563EB',
+        'deep-blue': '#1E40AF',
+        'light-blue': '#3B82F6',
+        'energetic-green': '#059669',
+        'deep-green': '#047857',
+        'light-green': '#10B981',
+        'fresh-white': '#FFFFFF',
+        'soft-gray': '#F8FAFC',
+        'medium-gray': '#64748B',
+        'dark-gray': '#1E293B',
       },
       fontFamily: {
         serif: ['Cormorant Garamond', 'serif'],
