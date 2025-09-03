@@ -112,10 +112,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const href = link.getAttribute('href');
             if (href === `#${current}` || (current === '' && href === '#home')) {
                 link.classList.add('active');
-                link.querySelector('.nav-underline').style.width = '100%';
+                const underline = link.querySelector('.nav-underline');
+                if (underline) {
+                    underline.style.width = '100%';
+                }
             } else {
                 link.classList.remove('active');
-                link.querySelector('.nav-underline').style.width = '0';
+                const underline = link.querySelector('.nav-underline');
+                if (underline) {
+                    underline.style.width = '0';
+                }
             }
         });
     }
