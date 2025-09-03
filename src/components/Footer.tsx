@@ -16,7 +16,7 @@ const Footer = () => {
               SOPHIE WAGNER
             </div>
             <p className="text-warm-cream/80 mb-8 lg:mb-12 font-light text-lg leading-relaxed max-w-md">
-              Certificeret personal trainer med specialisering i 
+              Certificeret Pilates instruktør og personal trainer med specialisering i 
               styrketræning, ernæring og mindfulness. Find din styrke, skab balance.
             </p>
             
@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="space-y-4">
               {[
                 { name: 'Om Sophie', path: '/om-sophie' },
-                { name: 'Ydelser', path: '/ydelser' },
+                { name: 'Pilates & Styrketræning', path: '/ydelser' },
                 { name: 'Galleri', path: '/galleri' },
                 { name: 'Anmeldelser', path: '/anmeldelser' },
                 { name: 'Priser', path: '/priser' },
@@ -48,7 +48,7 @@ const Footer = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="block text-warm-cream/80 hover:text-light-blue transition-all duration-300 font-light"
+                  className="block text-warm-cream/80 hover:text-warm-brown transition-all duration-300 font-light"
                 >
                   {item.name}
                 </Link>
@@ -61,8 +61,8 @@ const Footer = () => {
             <h3 className="text-lg lg:text-xl font-serif font-medium text-warm-cream mb-6 lg:mb-8">Kontakt Sophie</h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <Mail className="text-energetic-blue" size={18} />
+                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <Mail className="text-warm-brown" size={18} />
                 </div>
                 <div>
                   <p className="text-warm-cream/90 font-light">kontakt@sophiewagner.dk</p>
@@ -70,8 +70,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <Phone className="text-energetic-blue" size={18} />
+                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <Phone className="text-warm-brown" size={18} />
                 </div>
                 <div>
                   <p className="text-warm-cream/90 font-light">+45 23 45 67 89</p>
@@ -79,8 +79,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <MapPin className="text-energetic-blue" size={18} />
+                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <MapPin className="text-warm-brown" size={18} />
                 </div>
                 <div>
                   <p className="text-warm-cream/90 font-light">København & online</p>
@@ -91,10 +91,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-energetic-blue/20 mt-16 pt-8">
+        <div className="border-t border-warm-brown/20 mt-16 pt-8">
           <div className="text-center">
             <div className="text-warm-cream/60 text-sm font-light">
-              <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" className="hover:text-light-blue transition-colors duration-300">
+              <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" className="hover:text-warm-brown transition-colors duration-300">
                 Lavet af Panthure.dk
               </a>
             </div>
