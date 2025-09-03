@@ -22,14 +22,14 @@ const Footer = () => {
             
             {/* Social Media */}
             <div className="flex space-x-6">
-              <a href="https://instagram.com/sophiewagner_fitness" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-warm-brown/20 rounded-full flex items-center justify-center hover:bg-warm-brown/30 hover:scale-110 transition-all duration-500">
-                <Instagram size={20} className="text-warm-brown" />
+              <a href="https://instagram.com/sophiewagner_fitness" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                <Instagram size={20} className="text-energetic-blue" />
               </a>
-              <a href="#" className="w-12 h-12 bg-warm-brown/20 rounded-full flex items-center justify-center hover:bg-warm-brown/30 hover:scale-110 transition-all duration-500">
-                <Facebook size={20} className="text-warm-brown" />
+              <a href="#" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                <Facebook size={20} className="text-energetic-blue" />
               </a>
-              <a href="#" className="w-12 h-12 bg-warm-brown/20 rounded-full flex items-center justify-center hover:bg-warm-brown/30 hover:scale-110 transition-all duration-500">
-                <Youtube size={20} className="text-warm-brown" />
+              <a href="#" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                <Youtube size={20} className="text-energetic-blue" />
               </a>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="block text-warm-cream/80 hover:text-warm-brown transition-all duration-300 font-light"
+                  className="block text-warm-cream/80 hover:text-light-blue transition-all duration-300 font-light"
                 >
                   {item.name}
                 </Link>
@@ -61,8 +61,8 @@ const Footer = () => {
             <h3 className="text-lg lg:text-xl font-serif font-medium text-warm-cream mb-6 lg:mb-8">Kontakt Sophie</h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <Mail className="text-warm-brown" size={18} />
+                <div className="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <Mail className="text-energetic-blue" size={18} />
                 </div>
                 <div>
                   <p className="text-warm-cream/90 font-light">kontakt@sophiewagner.dk</p>
@@ -70,8 +70,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <Phone className="text-warm-brown" size={18} />
+                <div className="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <Phone className="text-energetic-blue" size={18} />
                 </div>
                 <div>
                   <p className="text-warm-cream/90 font-light">+45 23 45 67 89</p>
@@ -79,8 +79,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <MapPin className="text-warm-brown" size={18} />
+                <div className="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <MapPin className="text-energetic-blue" size={18} />
                 </div>
                 <div>
                   <p className="text-warm-cream/90 font-light">København & online</p>
@@ -91,10 +91,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-warm-brown/20 mt-16 pt-8">
+        <div className="border-t border-energetic-blue/20 mt-16 pt-8">
           <div className="text-center">
             <div className="text-warm-cream/60 text-sm font-light">
-              <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" className="hover:text-warm-brown transition-colors duration-300">
+              <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" className="hover:text-light-blue transition-colors duration-300">
                 Lavet af Panthure.dk
               </a>
             </div>

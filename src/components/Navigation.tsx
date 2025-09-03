@@ -1,115 +1,161 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Instagram, Facebook, Youtube } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, Instagram, Facebook } from 'lucide-react';
 
-const Footer = () => {
+const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 50;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
+
+  const navItems = [
+    { name: 'Forside', path: '/' },
+    { name: 'Om Sophie', path: '/om-sophie' },
+    { name: 'Ydelser', path: '/ydelser' },
+    { name: 'Galleri', path: '/galleri' },
+    { name: 'Anmeldelser', path: '/anmeldelser' },
+    { name: 'Priser', path: '/priser' },
+  ];
+
   return (
-    <footer className="bg-deep-brown text-warm-cream relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-deep-brown via-deep-brown/95 to-warm-brown/20"></div>
-      <div className="absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-warm-brown/10 rounded-full blur-3xl"></div>
-      
-      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-4 gap-12 lg:gap-16">
-          {/* Brand Section */}
-          <div className="lg:col-span-2">
-            <div className="text-3xl lg:text-4xl font-serif font-light mb-6 lg:mb-8 text-warm-cream tracking-[0.15em]">
+    <>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
+        isScrolled ? 'bg-fresh-white/95 backdrop-blur-xl shadow-warm border-b border-energetic-blue/10' : 'bg-transparent'
+      }`}>
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex justify-between items-center py-4 lg:py-6">
+            <Link to="/" className={`text-xl lg:text-2xl xl:text-3xl font-serif font-light tracking-[0.15em] transition-colors duration-500 ${
+              isScrolled ? 'text-dark-gray hover:text-energetic-blue' : 'text-fresh-white hover:text-light-blue'
+            }`}>
               SOPHIE WAGNER
-            </div>
-            <p className="text-warm-cream/80 mb-8 lg:mb-12 font-light text-lg leading-relaxed max-w-md">
-              Certificeret Pilates instruktør og personal trainer med specialisering i 
-              styrketræning, ernæring og mindfulness. Find din styrke, skab balance.
-            </p>
+            </Link>
             
-            {/* Social Media */}
-            <div className="flex space-x-6">
-              <a href="https://instagram.com/sophiewagner_fitness" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
-                <Instagram size={20} className="text-energetic-blue" />
-              </a>
-              <a href="#" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
-                <Facebook size={20} className="text-energetic-blue" />
-              </a>
-              <a href="#" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
-                <Youtube size={20} className="text-energetic-blue" />
-              </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg lg:text-xl font-serif font-medium text-warm-cream mb-6 lg:mb-8">Hurtige Links</h3>
-            <div className="space-y-4">
-              {[
-                { name: 'Om Sophie', path: '/om-sophie' },
-                { name: 'Pilates & Styrketræning', path: '/ydelser' },
-                { name: 'Galleri', path: '/galleri' },
-                { name: 'Anmeldelser', path: '/anmeldelser' },
-              className="block w-full bg-energetic-blue text-fresh-white py-4 rounded-full hover:bg-deep-blue transition-all duration-500 font-medium tracking-[0.05em] text-sm text-center mt-8"
-              ].map((item) => (
+            {/* Desktop Menu */}
+            <div className="hidden xl:flex items-center space-x-6 lg:space-x-8">
+              {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="block text-warm-cream/80 hover:text-warm-brown transition-all duration-300 font-light"
+                  className={`transition-all duration-500 font-light tracking-[0.05em] text-sm relative group whitespace-nowrap ${
+                    isScrolled 
+                      ? 'text-dark-gray/70 hover:text-energetic-blue' 
+                      : 'text-fresh-white/80 hover:text-light-blue'
+                  } ${
+                    location.pathname === item.path 
+                      ? (isScrolled ? 'text-energetic-blue' : 'text-light-blue') 
+                      : ''
+                  }`}
                 >
                   {item.name}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 transition-all duration-500 ${
+                    isScrolled ? 'bg-energetic-blue' : 'bg-light-blue'
+                  } ${
+                    location.pathname === item.path ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </Link>
               ))}
+              <Link
+                to="/kontakt"
+                className={`px-6 lg:px-8 py-3 lg:py-3.5 rounded-full transition-all duration-500 font-light tracking-[0.05em] text-sm transform hover:scale-105 whitespace-nowrap ${
+                  isScrolled 
+                    ? 'bg-energetic-blue text-fresh-white hover:bg-deep-blue hover:shadow-warm-lg' 
+                    : 'bg-fresh-white/20 backdrop-blur-sm text-fresh-white border border-fresh-white/20 hover:bg-fresh-white/30'
+                }`}
+              >
+                Book konsultation
+              </Link>
             </div>
-          </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg lg:text-xl font-serif font-medium text-warm-cream mb-6 lg:mb-8">Kontakt Sophie</h3>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <Mail className="text-warm-brown" size={18} />
-                </div>
-                <div>
-                  <p className="text-warm-cream/90 font-light">sophie@wagnertraining.dk</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <Phone className="text-warm-brown" size={18} />
-                </div>
-                <div>
-                  <p className="text-warm-cream/90 font-light">+45 23 45 67 89</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                  <MapPin className="text-warm-brown" size={18} />
-                </div>
-                <div>
-                  <p className="text-warm-cream/90 font-light">København & online</p>
-                </div>
-              </div>
-            </div>
+            {/* Mobile Menu Button */}
+            <button
+              className={`xl:hidden p-3 rounded-full transition-all duration-300 relative z-50 ${
+                isScrolled 
+                  ? 'text-dark-gray hover:bg-energetic-blue/10' 
+                  : 'text-fresh-white hover:bg-fresh-white/10'
+              }`}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
+      </nav>
 
-        {/* Bottom Section */}
-        <div className="border-t border-warm-brown/20 mt-16 pt-8">
-          <div className="text-center">
-            <div className="text-warm-cream/60 text-sm font-light">
-              <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" className="hover:text-warm-brown transition-colors duration-300">
-                Lavet af Panthure.dk
-              </a>
+      {/* Mobile Drawer Overlay */}
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-dark-gray/50 backdrop-blur-sm z-40 xl:hidden"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
+
+      {/* Mobile Drawer */}
+      <div className={`fixed top-0 right-0 h-full w-80 bg-fresh-white shadow-warm-xl z-40 xl:hidden transform transition-transform duration-500 ease-in-out ${
+        isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+      }`}>
+        <div className="p-8 pt-24">
+          <div className="space-y-6">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block text-dark-gray/80 hover:text-energetic-blue transition-all duration-300 font-light tracking-[0.05em] text-lg py-3 border-b border-energetic-blue/10 ${
+                  location.pathname === item.path ? 'text-energetic-blue' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+            
+            {/* Social Media Icons in Mobile Drawer */}
+            <div className="pt-6 border-t border-energetic-blue/10">
+              <p className="text-dark-gray/60 font-light text-sm mb-4 uppercase tracking-[0.1em]">Følg Sophie</p>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://instagram.com/sophiewagner_fitness" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-energetic-blue/10 rounded-full flex items-center justify-center hover:bg-energetic-blue/20 hover:scale-110 transition-all duration-500"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <Instagram size={20} className="text-energetic-blue" />
+                </a>
+                <a 
+                  href="#" 
+                  className="w-12 h-12 bg-energetic-blue/10 rounded-full flex items-center justify-center hover:bg-energetic-blue/20 hover:scale-110 transition-all duration-500"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <Facebook size={20} className="text-energetic-blue" />
+                </a>
+              </div>
             </div>
+            
+            <Link
+              to="/kontakt"
+              className="block w-full bg-energetic-blue text-fresh-white py-4 rounded-full hover:bg-deep-blue transition-all duration-500 font-light tracking-[0.05em] text-sm text-center mt-8"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Book konsultation
+            </Link>
           </div>
         </div>
       </div>
-      
-      {/* Copyright Notice - Hidden but present for SEO */}
-      {/* 
-        Website Design & Development by Panthure.dk
-        Premium web solutions for fitness professionals
-        Copyright © 2025 Panthure.dk - All rights reserved
-      */}
-    </footer>
+    </>
   );
 };
 
-export default Footer;
+export default Navigation;
