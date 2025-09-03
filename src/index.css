@@ -1,280 +1,115 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Mail, Phone, MapPin, Instagram, Facebook, Youtube } from 'lucide-react';
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@200;300;400;500;600;700&display=swap');
+const Footer = () => {
+  return (
+    <footer className="bg-dark-gray text-fresh-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-dark-gray via-dark-gray/95 to-energetic-blue/20"></div>
+      <div className="absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-energetic-blue/10 rounded-full blur-3xl"></div>
+      
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-4 gap-12 lg:gap-16">
+          {/* Brand Section */}
+          <div className="lg:col-span-2">
+            <div className="text-3xl lg:text-4xl font-serif font-light mb-6 lg:mb-8 text-fresh-white tracking-[0.15em]">
+              SOPHIE WAGNER
+            </div>
+            <p className="text-fresh-white/80 mb-8 lg:mb-12 font-light text-lg leading-relaxed max-w-md">
+              Certificeret personal trainer med specialisering i 
+              styrketræning, ernæring og mindfulness. Find din styrke, skab balance.
+            </p>
+            
+            {/* Social Media */}
+            <div className="flex space-x-6">
+              <a href="https://instagram.com/sophiewagner_fitness" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                <Instagram size={20} className="text-energetic-blue" />
+              </a>
+              <a href="#" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                <Facebook size={20} className="text-energetic-blue" />
+              </a>
+              <a href="#" className="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                <Youtube size={20} className="text-energetic-blue" />
+              </a>
+            </div>
+          </div>
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.7;
-    font-weight: 300;
-    background-color: #FFFFFF;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
-    line-height: 1.1;
-  }
-}
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg lg:text-xl font-serif font-medium text-warm-cream mb-6 lg:mb-8">Hurtige Links</h3>
+            <div className="space-y-4">
+              {[
+                { name: 'Om Sophie', path: '/om-sophie' },
+                { name: 'Pilates & Styrketræning', path: '/ydelser' },
+                { name: 'Galleri', path: '/galleri' },
+                { name: 'Anmeldelser', path: '/anmeldelser' },
+                { name: 'Priser', path: '/priser' },
+              ].map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="block text-warm-cream/80 hover:text-warm-brown transition-all duration-300 font-light"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
 
-@layer utilities {
-  .font-serif {
-    font-family: 'Cormorant Garamond', serif;
-  }
-  
-  .font-sans {
-    font-family: 'Inter', sans-serif;
-  }
-}
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg lg:text-xl font-serif font-medium text-warm-cream mb-6 lg:mb-8">Kontakt Sophie</h3>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <Mail className="text-warm-brown" size={18} />
+                </div>
+                <div>
+                  <p className="text-warm-cream/90 font-light">sophie@wagnertraining.dk</p>
+                </div>
+              </div>
 
-/* Animation Classes */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <Phone className="text-warm-brown" size={18} />
+                </div>
+                <div>
+                  <p className="text-warm-cream/90 font-light">+45 23 45 67 89</p>
+                </div>
+              </div>
 
-.animate-on-scroll.animate-in {
-  opacity: 1;
-  transform: translateY(0);
-}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-warm-brown/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                  <MapPin className="text-warm-brown" size={18} />
+                </div>
+                <div>
+                  <p className="text-warm-cream/90 font-light">København & online</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-/* Staggered Animation Delays */
-.animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
-.animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
-.animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
-.animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
-.animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }
-.animate-on-scroll:nth-child(6) { transition-delay: 0.6s; }
+        {/* Bottom Section */}
+        <div className="border-t border-warm-brown/20 mt-16 pt-8">
+          <div className="text-center">
+            <div className="text-warm-cream/60 text-sm font-light">
+              <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" className="hover:text-warm-brown transition-colors duration-300">
+                Lavet af Panthure.dk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Copyright Notice - Hidden but present for SEO */}
+      {/* 
+        Website Design & Development by Panthure.dk
+        Premium web solutions for fitness professionals
+        Copyright © 2025 Panthure.dk - All rights reserved
+      */}
+    </footer>
+  );
+};
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #FFFFFF;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #2563EB;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #1E40AF;
-}
-
-/* Smooth Focus States */
-input:focus, textarea:focus, button:focus {
-  outline: none;
-}
-
-/* Enhanced Shadow System */
-.shadow-warm {
-  box-shadow: 0 8px 32px -4px rgba(37, 99, 235, 0.15), 
-              0 4px 16px -4px rgba(37, 99, 235, 0.08);
-}
-
-.shadow-warm-lg {
-  box-shadow: 0 16px 48px -8px rgba(37, 99, 235, 0.2), 
-              0 8px 24px -8px rgba(37, 99, 235, 0.12);
-}
-
-.shadow-warm-xl {
-  box-shadow: 0 24px 64px -12px rgba(37, 99, 235, 0.25), 
-              0 12px 32px -12px rgba(37, 99, 235, 0.15);
-}
-
-/* Backdrop Blur Support */
-.backdrop-blur-sm {
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
-.backdrop-blur-md {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.backdrop-blur-xl {
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-}
-
-/* Typography Enhancements */
-.text-balance {
-  text-wrap: balance;
-}
-
-/* Interactive Elements */
-button, a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Mobile Navigation Transitions */
-@media (max-width: 1024px) {
-  .animate-on-scroll {
-    transform: translateY(40px);
-  }
-}
-
-/* Loading Animation for Images */
-img {
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-}
-
-/* Form Styling */
-input::placeholder,
-textarea::placeholder {
-  transition: color 0.5s ease;
-}
-
-input:focus::placeholder,
-textarea:focus::placeholder {
-  color: transparent;
-}
-
-/* Smooth transitions for all interactive elements */
-* {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
-}
-
-/* Custom selection colors */
-::selection {
-  background-color: #2563EB;
-  color: #FFFFFF;
-}
-
-::-moz-selection {
-  background-color: #2563EB;
-  color: #FFFFFF;
-}
-
-/* Enhanced focus states for accessibility */
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-  outline: 2px solid #2563EB;
-  outline-offset: 2px;
-}
-
-/* Gradient Backgrounds */
-.bg-gradient-warm {
-  background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 50%, #E2E8F0 100%);
-}
-
-/* Enhanced Button Hover Effects */
-.hover\:scale-105:hover {
-  transform: scale(1.05);
-}
-
-.hover\:scale-110:hover {
-  transform: scale(1.1);
-}
-
-/* Refined Border Radius */
-.rounded-warm {
-  border-radius: 2rem;
-}
-
-/* Enhanced Letter Spacing */
-.tracking-warm {
-  letter-spacing: 0.1em;
-}
-
-.tracking-warm-wide {
-  letter-spacing: 0.15em;
-}
-
-/* Improved Line Heights */
-.leading-warm {
-  line-height: 1.8;
-}
-
-/* Custom Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 1s ease-out;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.8s ease-out;
-}
-
-/* Enhanced Typography Scale */
-.text-display {
-  font-size: clamp(3rem, 8vw, 8rem);
-  line-height: 0.9;
-  letter-spacing: -0.02em;
-}
-
-.text-hero {
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-}
-
-/* Improved Spacing System */
-.space-warm > * + * {
-  margin-top: 2rem;
-}
-
-.space-warm-lg > * + * {
-  margin-top: 3rem;
-}
-
-/* Enhanced Border System */
-.border-warm {
-  border-color: rgba(37, 99, 235, 0.1);
-}
-
-.border-warm-light {
-  border-color: rgba(37, 99, 235, 0.05);
-}
-
-/* Refined Glass Effect */
-.glass-warm {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(37, 99, 235, 0.1);
-}
-
-/* Enhanced Hover States */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px -8px rgba(37, 99, 235, 0.2);
-}
+export default Footer;
