@@ -91,6 +91,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
+        <div className="border-t border-warm-brown/20 mt-16 pt-8">
+          <div className="text-center">
+            <div className="text-warm-cream/60 text-sm font-light">
               <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" className="hover:text-warm-brown transition-colors duration-300">
                 Lavet af Panthure.dk
               </a>
