@@ -1,9 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags - Danish -->
     <title>Sophie Wagner: Styrketræning, Funktionel Movement, Pilates, Løb & Ernæring | Personal Trainer København</title>
@@ -16,7 +15,6 @@
     <meta property="og:url" content="https://sophiewagner.dk/" />
     <meta property="og:title" content="Sophie Wagner: Styrketræning, Funktionel Movement, Pilates, Løb & Ernæring" />
     <meta property="og:description" content="Certificeret personal træner i København. Styrke, balance og bevægelsesglæde – indefra og ud." />
-    <meta property="og:image" content="https://sophiewagner.dk/sophie-wagner-pilates.jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -33,7 +31,7 @@
       "description": "Certificeret personal træner specialiseret i styrketræning, funktionel movement, pilates, løb og ernæring",
       "url": "https://sophiewagner.dk",
       "telephone": "+45 23 45 67 89",
-      "email": "sophie@wagnertraining.dk",
+      "email": "kontakt@sophiewagner.dk",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "København",
@@ -45,7 +43,7 @@
         "longitude": 12.5683
       },
       "openingHours": "Mo-Fr 06:00-20:00, Sa 08:00-16:00",
-      "priceRange": "800-1200 DKK",
+      "priceRange": "Kontakt for pris",
       "serviceArea": {
         "@type": "Place",
         "name": "København og omegn"
@@ -53,14 +51,891 @@
     }
     </script>
     
-    <!-- Copyright Notice -->
-    <!-- Website developed by Panthure.dk - Premium web solutions -->
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Panthure.dk Development Credit -->
-    <!-- This website was crafted with excellence by Panthure.dk -->
-  </body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-700">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="flex justify-between items-center py-4 lg:py-6">
+                <a href="#home" class="text-xl lg:text-2xl xl:text-3xl font-serif font-light tracking-widest text-dark-gray hover:text-energetic-blue transition-colors duration-500">
+                    SOPHIE WAGNER
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden xl:flex items-center space-x-6 lg:space-x-8">
+                    <a href="#home" class="nav-link text-dark-gray/70 hover:text-energetic-blue transition-all duration-500 font-light tracking-wide text-sm relative group whitespace-nowrap">
+                        Forside
+                        <span class="nav-underline absolute -bottom-1 left-0 h-0.5 bg-energetic-blue transition-all duration-500 w-0 group-hover:w-full"></span>
+                    </a>
+                    <a href="#om-sophie" class="nav-link text-dark-gray/70 hover:text-energetic-blue transition-all duration-500 font-light tracking-wide text-sm relative group whitespace-nowrap">
+                        Om Sophie
+                        <span class="nav-underline absolute -bottom-1 left-0 h-0.5 bg-energetic-blue transition-all duration-500 w-0 group-hover:w-full"></span>
+                    </a>
+                    <a href="#ydelser" class="nav-link text-dark-gray/70 hover:text-energetic-blue transition-all duration-500 font-light tracking-wide text-sm relative group whitespace-nowrap">
+                        Ydelser
+                        <span class="nav-underline absolute -bottom-1 left-0 h-0.5 bg-energetic-blue transition-all duration-500 w-0 group-hover:w-full"></span>
+                    </a>
+                    <a href="#priser" class="nav-link text-dark-gray/70 hover:text-energetic-blue transition-all duration-500 font-light tracking-wide text-sm relative group whitespace-nowrap">
+                        Priser
+                        <span class="nav-underline absolute -bottom-1 left-0 h-0.5 bg-energetic-blue transition-all duration-500 w-0 group-hover:w-full"></span>
+                    </a>
+                    <a href="#kontakt" class="nav-link text-dark-gray/70 hover:text-energetic-blue transition-all duration-500 font-light tracking-wide text-sm relative group whitespace-nowrap">
+                        Kontakt
+                        <span class="nav-underline absolute -bottom-1 left-0 h-0.5 bg-energetic-blue transition-all duration-500 w-0 group-hover:w-full"></span>
+                    </a>
+                    <a href="#kontakt" class="bg-energetic-blue text-fresh-white px-6 lg:px-8 py-3 lg:py-3.5 rounded-full hover:bg-deep-blue hover:shadow-warm-lg transition-all duration-500 font-medium tracking-wide text-sm transform hover:scale-105 whitespace-nowrap">
+                        Book konsultation
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="xl:hidden p-3 text-dark-gray hover:bg-energetic-blue/10 rounded-full transition-all duration-300 relative z-50">
+                    <svg class="menu-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg class="close-icon w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-dark-gray/50 backdrop-blur-sm z-40 xl:hidden hidden"></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-80 bg-fresh-white shadow-warm-xl z-40 xl:hidden transform translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="p-8 pt-24">
+            <div class="space-y-6">
+                <a href="#home" class="mobile-nav-link block text-dark-gray/80 hover:text-energetic-blue transition-all duration-300 font-light tracking-wide text-lg py-3 border-b border-energetic-blue/10">
+                    Forside
+                </a>
+                <a href="#om-sophie" class="mobile-nav-link block text-dark-gray/80 hover:text-energetic-blue transition-all duration-300 font-light tracking-wide text-lg py-3 border-b border-energetic-blue/10">
+                    Om Sophie
+                </a>
+                <a href="#ydelser" class="mobile-nav-link block text-dark-gray/80 hover:text-energetic-blue transition-all duration-300 font-light tracking-wide text-lg py-3 border-b border-energetic-blue/10">
+                    Ydelser
+                </a>
+                <a href="#priser" class="mobile-nav-link block text-dark-gray/80 hover:text-energetic-blue transition-all duration-300 font-light tracking-wide text-lg py-3 border-b border-energetic-blue/10">
+                    Priser
+                </a>
+                <a href="#kontakt" class="mobile-nav-link block text-dark-gray/80 hover:text-energetic-blue transition-all duration-300 font-light tracking-wide text-lg py-3 border-b border-energetic-blue/10">
+                    Kontakt
+                </a>
+                
+                <!-- Social Media Icons in Mobile Menu -->
+                <div class="pt-6 border-t border-energetic-blue/10">
+                    <p class="text-dark-gray/60 font-light text-sm mb-4 uppercase tracking-wide">Følg Sophie</p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/sophiewagner_fitness" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-energetic-blue/10 rounded-full flex items-center justify-center hover:bg-energetic-blue/20 hover:scale-110 transition-all duration-500">
+                            <svg class="w-5 h-5 text-energetic-blue" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-energetic-blue/10 rounded-full flex items-center justify-center hover:bg-energetic-blue/20 hover:scale-110 transition-all duration-500">
+                            <svg class="w-5 h-5 text-energetic-blue" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="#kontakt" class="mobile-nav-link block w-full bg-energetic-blue text-fresh-white py-4 rounded-full hover:bg-deep-blue transition-all duration-500 font-medium tracking-wide text-sm text-center mt-8">
+                    Book konsultation
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Banner Section -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-energetic-blue via-light-blue/30 to-energetic-green/20">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-energetic-blue/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-64 lg:w-96 h-64 lg:h-96 bg-energetic-green/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 right-1/4 w-32 lg:w-64 h-32 lg:h-64 bg-light-blue/10 rounded-full blur-2xl"></div>
+        
+        <!-- Full Width Banner Content -->
+        <div class="relative z-20 w-full">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 lg:py-32">
+                <div class="text-center">
+                    <div class="mb-8 lg:mb-12">
+                        <span class="inline-block px-6 lg:px-8 py-3 lg:py-4 bg-energetic-blue/10 backdrop-blur-sm text-energetic-blue font-medium tracking-widest text-sm uppercase rounded-full animate-on-scroll">
+                            Certificeret Personal Træner
+                        </span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-light text-dark-gray mb-6 lg:mb-8 leading-tight tracking-tight max-w-6xl mx-auto animate-on-scroll">
+                        Sophie Wagner
+                    </h1>
+                    
+                    <h2 class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-energetic-blue mb-6 lg:mb-8 font-medium leading-relaxed max-w-5xl mx-auto animate-on-scroll">
+                        Styrketræning, funktionel movement, pilates, løb, ernæring og balance i hverdagen
+                    </h2>
+                    
+                    <p class="text-lg sm:text-xl lg:text-2xl text-dark-gray/80 mb-8 lg:mb-12 font-light leading-relaxed max-w-4xl mx-auto animate-on-scroll">
+                        <strong class="text-energetic-green">Styrke, balance og bevægelsesglæde – indefra og ud</strong>
+                    </p>
+                    
+                    <div class="space-y-6 lg:space-y-8 text-base sm:text-lg lg:text-xl text-dark-gray/70 mb-12 lg:mb-16 font-light leading-relaxed max-w-5xl mx-auto animate-on-scroll">
+                        <p>
+                            Certificeret personlig træner, holdtræner og kostvejleder – med fokus på at skabe resultater, 
+                            der passer ind i din hverdag.
+                        </p>
+                        <p>
+                            Jeg hjælper dig med at opbygge styrke, forbedre din mobilitet og finde balancen mellem 
+                            træning, ernæring og et aktivt liv.
+                        </p>
+                        <p>
+                            Mit mål er ikke kun at gøre dig stærkere fysisk – men også at hjælpe dig med at udvikle 
+                            dig indefra og ud: at booste dit potentiale, din selvtillid og dit selvværd.
+                        </p>
+                        <p class="text-energetic-blue font-medium text-xl">
+                            👉 Book en uforpligtende samtale i dag og tag første skridt mod et stærkere og mere balanceret liv.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 lg:gap-8 items-center justify-center animate-on-scroll">
+                        <a href="#kontakt" class="group bg-energetic-blue text-fresh-white px-8 lg:px-12 py-4 lg:py-5 rounded-full hover:bg-deep-blue hover:shadow-warm-xl transition-all duration-500 font-medium tracking-wide text-sm uppercase flex items-center gap-3 transform hover:scale-105">
+                            Book uforpligtende samtale
+                            <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        
+                        <a href="#om-sophie" class="group flex items-center gap-4 text-dark-gray/70 hover:text-energetic-blue transition-all duration-500 font-light tracking-wide text-sm uppercase">
+                            <div class="w-12 lg:w-14 h-12 lg:h-14 rounded-full border-2 border-dark-gray/20 group-hover:border-energetic-blue flex items-center justify-center transition-all duration-500 group-hover:shadow-warm backdrop-blur-sm bg-fresh-white/20">
+                                <svg class="w-4 h-4 ml-1 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                            Læs mere om Sophie
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <div class="w-6 h-10 border-2 border-energetic-blue/30 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-energetic-blue/50 rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Om Sophie Section -->
+    <section id="om-sophie" class="py-24 lg:py-32 bg-soft-gray relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-energetic-blue/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-energetic-green/5 rounded-full blur-3xl"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div class="animate-on-scroll order-2 lg:order-1">
+                    <div class="relative group">
+                        <div class="absolute -inset-8 bg-gradient-to-br from-energetic-blue/10 to-energetic-green/5 rounded-3xl transform rotate-3 group-hover:rotate-2 transition-transform duration-1000"></div>
+                        <div class="absolute -inset-4 bg-energetic-blue/5 rounded-3xl transform -rotate-2 group-hover:rotate-0 transition-transform duration-1000"></div>
+                        <div class="relative overflow-hidden rounded-3xl shadow-warm-xl">
+                            <img src="https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Sophie Wagner - Fra New Zealand til København, personlig træner og kostvejleder" class="w-full h-[500px] lg:h-[700px] object-cover transform group-hover:scale-105 transition-transform duration-3000">
+                            <div class="absolute inset-0 bg-gradient-to-t from-energetic-blue/30 via-transparent to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate-on-scroll order-1 lg:order-2">
+                    <span class="inline-block px-6 py-3 bg-energetic-blue/10 text-energetic-blue font-medium tracking-widest text-xs uppercase rounded-full mb-12">
+                        Om mig
+                    </span>
+                    
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-light text-dark-gray mb-8 lg:mb-12 leading-tight">
+                        Fra <em class="text-energetic-green">passion</em><br />
+                        til profession
+                    </h2>
+                    
+                    <div class="space-y-6 lg:space-y-8 text-base lg:text-lg text-dark-gray/70 leading-relaxed font-light mb-12 lg:mb-16">
+                        <p>
+                            Jeg er 27 år og født og opvokset i New Zealand af danske forældre, hvor jeg tidligt 
+                            fandt glæden ved bevægelse. Siden jeg kan huske, har jeg dyrket fitness, styrketræning, 
+                            løb, dans og sejlads – og med 14 års baggrund som balletdanser har kroppen altid været 
+                            en central del af mit liv.
+                        </p>
+                        <p>
+                            Efter at have læst naturvidenskab på Københavns Universitet valgte jeg at gå all in på træning. 
+                            Jeg tog et intenst år på Paul Petersens Idrætsinstitut, hvor jeg fordybede mig i anatomi, 
+                            fysiologi og træningslære – og fik værktøjerne til at arbejde professionelt med krop og bevægelse.
+                        </p>
+                        <p>
+                            Jeg har tidligere sejlet som gast, underviser og kaptajn, hvor jeg lærte, hvor meget disciplin, 
+                            styrke og samarbejde betyder for at nå et fælles mål. Den erfaring har jeg taget med mig ind i 
+                            min træning, hvor jeg brænder for at fremme team spirit – både når jeg arbejder med hold, 
+                            virksomheder og i mine bootcamps.
+                        </p>
+                        <p>
+                            De seneste par år har jeg arbejdet som fuldtids selvstændig personlig træner og hjulpet 
+                            hundredvis af mennesker i København med at finde styrke, balance og glæde i deres træning og hverdag. 
+                            Til daglig er jeg personlig træner i Sporting Health Club, underviser på hold i Barry's Copenhagen, 
+                            samarbejder med forskellige kontorfællesskaber og afholder udendørs bootcamps – både for private og virksomheder.
+                        </p>
+                    </div>
+
+                    <a href="#ydelser" class="group bg-energetic-blue text-fresh-white px-8 lg:px-10 py-4 lg:py-5 rounded-full hover:bg-deep-blue hover:shadow-warm-xl transition-all duration-500 font-medium tracking-wide text-sm uppercase flex items-center gap-4 transform hover:scale-105 w-fit">
+                        Læs om mine ydelser
+                        <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Min tilgang Section -->
+    <section class="py-24 lg:py-32 bg-gradient-to-br from-fresh-white via-soft-gray/50 to-energetic-blue/5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-energetic-blue/5 via-transparent to-energetic-green/10"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-20 lg:mb-24">
+                <span class="inline-block px-6 py-3 bg-energetic-blue/10 text-energetic-blue font-medium tracking-widest text-xs uppercase rounded-full mb-12 animate-on-scroll">
+                    Min tilgang
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-light text-dark-gray mb-8 lg:mb-12 leading-tight animate-on-scroll max-w-5xl mx-auto">
+                    Funktionel træning der <em class="text-energetic-green">styrker</em><br />
+                    både krop og sind
+                </h2>
+                <p class="text-lg lg:text-xl text-dark-gray/70 leading-relaxed font-light max-w-4xl mx-auto animate-on-scroll">
+                    Jeg kombinerer funktionel styrketræning, funktionel movement, mobilitet, pilates og personlig 
+                    ernæringsvejledning. På den måde skaber jeg skræddersyede programmer, der styrker både krop og sind 
+                    – og hjælper dig med at arbejde med din krop i stedet for imod den.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-20 lg:mb-24">
+                <div class="animate-on-scroll">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-energetic-blue/5 rounded-2xl blur-xl"></div>
+                        <div class="relative overflow-hidden rounded-2xl shadow-warm-xl">
+                            <img src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Sophie Wagner funktionel træning og styrketræning København" class="w-full h-[500px] lg:h-[600px] object-cover transform group-hover:scale-105 transition-transform duration-2000">
+                            <div class="absolute inset-0 bg-gradient-to-t from-energetic-blue/20 via-transparent to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll">
+                    <div class="space-y-6 lg:space-y-8 text-base lg:text-lg text-dark-gray/70 leading-relaxed font-light">
+                        <p>
+                            For mig er det vigtigt, at hver enkelt klient ikke kun oplever fremgang i træningen, 
+                            men også får styrket deres potentiale, selvtillid og selvværd.
+                        </p>
+                        <p>
+                            Jeg tror på balance fremfor perfektion, og at varig forandring sker indefra og ud – 
+                            fordi træning og sundhed skal støtte dit liv, ikke kontrollere det.
+                        </p>
+                        <div class="bg-energetic-blue/10 rounded-2xl p-6 lg:p-8">
+                            <h3 class="text-lg lg:text-xl font-serif text-dark-gray mb-4">Mine specialer:</h3>
+                            <div class="grid grid-cols-2 gap-3 text-sm lg:text-base">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-blue">💪</span>
+                                    <span>Styrketræning</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-blue">🤸</span>
+                                    <span>Funktionel Movement</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-blue">✨</span>
+                                    <span>Pilates</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-blue">🥗</span>
+                                    <span>Ernæring</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-blue">🧘</span>
+                                    <span>Mindfulness</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificeringer Section -->
+    <section class="py-24 lg:py-32 bg-soft-gray relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16 lg:mb-20">
+                <span class="inline-block px-6 py-3 bg-energetic-blue/10 text-energetic-blue font-medium tracking-widest text-xs uppercase rounded-full mb-12 animate-on-scroll">
+                    Certificeringer & Baggrund
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-light text-dark-gray mb-8 lg:mb-12 leading-tight animate-on-scroll">
+                    Solid <em class="text-energetic-green">faglig ballast</em>
+                </h2>
+                <p class="text-lg lg:text-xl text-dark-gray/70 leading-relaxed font-light max-w-4xl mx-auto animate-on-scroll">
+                    Jeg bygger min træning på både erfaring og en solid faglig ballast. 
+                    Denne kombination giver mig en unik tilgang, hvor klassisk træning, funktionel fitness 
+                    og holistiske principper smelter sammen – så du får et forløb, der styrker både krop og sind.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                <div class="bg-fresh-white/80 rounded-2xl p-8 lg:p-10 hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10 text-center">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">📜</span>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-serif font-light text-dark-gray mb-4">EREPS-certificeret</h3>
+                    <p class="text-dark-gray/70 font-light">Personlig træner</p>
+                    <p class="text-sm text-dark-gray/50 font-light mt-2">Paul Petersens Idrætsinstitut</p>
+                </div>
+
+                <div class="bg-fresh-white/80 rounded-2xl p-8 lg:p-10 hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10 text-center">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🧘</span>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-serif font-light text-dark-gray mb-4">100 timers</h3>
+                    <p class="text-dark-gray/70 font-light">Yoga instruktør</p>
+                    <p class="text-sm text-dark-gray/50 font-light mt-2">Mindfulness & Balance</p>
+                </div>
+
+                <div class="bg-fresh-white/80 rounded-2xl p-8 lg:p-10 hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10 text-center">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🏋️</span>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-serif font-light text-dark-gray mb-4">Kostvejleder</h3>
+                    <p class="text-dark-gray/70 font-light">Ernæring & Livsstil</p>
+                    <p class="text-sm text-dark-gray/50 font-light mt-2">Holistisk tilgang</p>
+                </div>
+
+                <div class="bg-fresh-white/80 rounded-2xl p-8 lg:p-10 hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10 text-center">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🏃</span>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-serif font-light text-dark-gray mb-4">Løbecoach</h3>
+                    <p class="text-dark-gray/70 font-light">Løbeteknik & Udholdenhed</p>
+                    <p class="text-sm text-dark-gray/50 font-light mt-2">Funktionel løbetræning</p>
+                </div>
+
+                <div class="bg-fresh-white/80 rounded-2xl p-8 lg:p-10 hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10 text-center">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">⛵</span>
+                    </div>
+                    <h3 class="text-xl lg:text-2xl font-serif font-light text-dark-gray mb-4">Yachtskipper</h3>
+                    <p class="text-dark-gray/70 font-light">3. grad certificering</p>
+                    <p class="text-sm text-dark-gray/50 font-light mt-2">Disciplin & Teamwork</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ydelser Section -->
+    <section id="ydelser" class="py-24 lg:py-32 bg-gradient-to-br from-energetic-blue/5 to-energetic-green/10 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-energetic-blue/5 via-transparent to-energetic-green/10"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16 lg:mb-20">
+                <span class="inline-block px-6 py-3 bg-energetic-blue/10 text-energetic-blue font-medium tracking-widest text-xs uppercase rounded-full mb-12 animate-on-scroll">
+                    Ydelser
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-light text-dark-gray mb-8 lg:mb-12 leading-tight animate-on-scroll">
+                    Skræddersyet til <em class="text-energetic-green">dig</em>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Personal Training -->
+                <div class="bg-fresh-white/90 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-warm hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mb-8">
+                        <span class="text-2xl">💪</span>
+                    </div>
+                    <h3 class="text-2xl lg:text-3xl font-serif font-light text-dark-gray mb-6">Personlig Træning</h3>
+                    <p class="text-dark-gray/70 mb-8 leading-relaxed font-light text-lg">
+                        1:1 træning med fuld fokus på dig og dine mål – styrke, mobilitet, vægttab eller generel sundhed. 
+                        Jeg tilbyder også small group træning for to personer – f.eks. veninder, venner eller par – der ønsker et fælles og personligt forløb.
+                    </p>
+                    <div class="bg-energetic-blue/10 rounded-xl p-4 mb-8">
+                        <p class="text-energetic-blue font-medium text-center">👉 Kontakt for pris</p>
+                    </div>
+                    <a href="#kontakt" class="w-full bg-energetic-blue text-fresh-white py-4 lg:py-5 rounded-full hover:bg-deep-blue hover:shadow-warm transition-all duration-500 font-medium tracking-wide text-sm uppercase transform hover:scale-105 flex items-center justify-center gap-3">
+                        Book session
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Corporate Training -->
+                <div class="bg-fresh-white/90 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-warm hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mb-8">
+                        <span class="text-2xl">🏢</span>
+                    </div>
+                    <h3 class="text-2xl lg:text-3xl font-serif font-light text-dark-gray mb-6">Firma Træning</h3>
+                    <p class="text-dark-gray/70 mb-8 leading-relaxed font-light text-lg">
+                        Jeg tilbyder skræddersyede træningsforløb til virksomheder, der ønsker at styrke sundhed, trivsel og fællesskab på arbejdspladsen.
+                        Jeg kan komme ud til jer – uanset om I har udstyr eller ej – og tilrettelægger træningen, så den passer til jeres behov og rammer.
+                    </p>
+                    <div class="bg-energetic-blue/10 rounded-xl p-4 mb-8">
+                        <p class="text-energetic-blue font-medium text-center">👉 Kontakt for pris</p>
+                    </div>
+                    <a href="#kontakt" class="w-full bg-energetic-blue text-fresh-white py-4 lg:py-5 rounded-full hover:bg-deep-blue hover:shadow-warm transition-all duration-500 font-medium tracking-wide text-sm uppercase transform hover:scale-105 flex items-center justify-center gap-3">
+                        Få tilbud
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Online Coaching -->
+                <div class="bg-fresh-white/90 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-warm hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mb-8">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-2xl lg:text-3xl font-serif font-light text-dark-gray mb-6">Online Coaching</h3>
+                    <p class="text-dark-gray/70 mb-8 leading-relaxed font-light text-lg">
+                        Fleksibel træning med løbende sparring, programmer og check-ins via app.
+                        Klienter kan følge deres forløb, stille spørgsmål og få kontinuerlig feedback – uanset hvor de befinder sig.
+                    </p>
+                    <div class="bg-energetic-blue/10 rounded-xl p-4 mb-8">
+                        <p class="text-energetic-blue font-medium text-center">👉 Kontakt for pris</p>
+                    </div>
+                    <a href="#kontakt" class="w-full bg-energetic-blue text-fresh-white py-4 lg:py-5 rounded-full hover:bg-deep-blue hover:shadow-warm transition-all duration-500 font-medium tracking-wide text-sm uppercase transform hover:scale-105 flex items-center justify-center gap-3">
+                        Start i dag
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Hjemme Pilates -->
+                <div class="bg-fresh-white/90 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-warm hover:shadow-warm-xl transition-all duration-700 animate-on-scroll border border-energetic-blue/10">
+                    <div class="w-16 h-16 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mb-8">
+                        <span class="text-2xl">🧘</span>
+                    </div>
+                    <h3 class="text-2xl lg:text-3xl font-serif font-light text-dark-gray mb-6">Hjemme Pilates Træning</h3>
+                    <p class="text-dark-gray/70 mb-8 leading-relaxed font-light text-lg">
+                        Personlig pilatestræning i trygge rammer hjemme hos dig, tilpasset dit niveau og dine mål.
+                    </p>
+                    <div class="bg-energetic-blue/10 rounded-xl p-4 mb-8">
+                        <p class="text-energetic-blue font-medium text-center">👉 Kontakt for pris</p>
+                    </div>
+                    <a href="#kontakt" class="w-full bg-energetic-blue text-fresh-white py-4 lg:py-5 rounded-full hover:bg-deep-blue hover:shadow-warm transition-all duration-500 font-medium tracking-wide text-sm uppercase transform hover:scale-105 flex items-center justify-center gap-3">
+                        Book pilates
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Priser Section -->
+    <section id="priser" class="py-24 lg:py-32 bg-soft-gray relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16 lg:mb-20">
+                <span class="inline-block px-6 py-3 bg-energetic-blue/10 text-energetic-blue font-medium tracking-widest text-xs uppercase rounded-full mb-12 animate-on-scroll">
+                    Priser
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-light text-dark-gray mb-8 lg:mb-12 leading-tight animate-on-scroll">
+                    Alle mine ydelser er <em class="text-energetic-green">skræddersyet</em>
+                </h2>
+                <p class="text-lg lg:text-xl text-dark-gray/70 leading-relaxed font-light max-w-4xl mx-auto animate-on-scroll">
+                    Derfor står der: <strong class="text-energetic-blue">👉 Kontakt for pris</strong>
+                </p>
+            </div>
+
+            <div class="bg-fresh-white/90 backdrop-blur-sm rounded-2xl p-12 lg:p-16 shadow-warm-xl animate-on-scroll border border-energetic-blue/10 text-center max-w-4xl mx-auto">
+                <div class="w-20 h-20 bg-energetic-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                    <span class="text-3xl">💎</span>
+                </div>
+                <h3 class="text-2xl lg:text-3xl font-serif font-light text-dark-gray mb-6">Personlig Tilgang</h3>
+                <p class="text-lg text-dark-gray/70 leading-relaxed font-light mb-8">
+                    Hver klient er unik, og derfor skræddersyr jeg alle mine ydelser til dine specifikke behov, mål og budget. 
+                    Kontakt mig for en uforpligtende samtale, hvor vi finder den perfekte løsning til dig.
+                </p>
+                <a href="#kontakt" class="bg-energetic-blue text-fresh-white px-10 py-5 rounded-full hover:bg-deep-blue hover:shadow-warm-xl transition-all duration-500 font-medium tracking-wide text-sm uppercase transform hover:scale-105 inline-flex items-center gap-3">
+                    Få dit personlige tilbud
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Samarbejde Section -->
+    <section class="py-24 lg:py-32 bg-gradient-to-br from-energetic-green/5 to-energetic-blue/10 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-energetic-green/5 via-transparent to-energetic-blue/10"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16 lg:mb-20">
+                <span class="inline-block px-6 py-3 bg-energetic-green/10 text-energetic-green font-medium tracking-widest text-xs uppercase rounded-full mb-12 animate-on-scroll">
+                    Samarbejde
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-light text-dark-gray mb-8 lg:mb-12 leading-tight animate-on-scroll">
+                    Åben for <em class="text-energetic-blue">spændende samarbejder</em>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div class="animate-on-scroll">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-energetic-green/5 rounded-2xl blur-xl"></div>
+                        <div class="relative overflow-hidden rounded-2xl shadow-warm-xl">
+                            <img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Sophie Wagner samarbejde og brand partnerships" class="w-full h-[500px] lg:h-[600px] object-cover transform group-hover:scale-105 transition-transform duration-2000">
+                            <div class="absolute inset-0 bg-gradient-to-t from-energetic-green/20 via-transparent to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll">
+                    <div class="space-y-6 lg:space-y-8 text-base lg:text-lg text-dark-gray/70 leading-relaxed font-light">
+                        <p>
+                            Jeg er altid åben for spændende fitness-relaterede samarbejder – det kan være alt fra events og workshops 
+                            til kampagner, fotoshoots eller brand-partnerskaber inden for træning, sundhed og livsstil.
+                        </p>
+                        <p>
+                            Jeg har tidligere lavet samarbejder og modelarbejde for forskellige sportsbrands, hvor jeg har kombineret 
+                            min faglige viden som træner med et stærkt visuelt udtryk. Det giver mulighed for at skabe inspirerende 
+                            indhold, der motiverer andre til at finde glæde i bevægelse og sundhed.
+                        </p>
+                        <div class="bg-energetic-green/10 rounded-2xl p-6 lg:p-8">
+                            <h3 class="text-lg lg:text-xl font-serif text-dark-gray mb-4">Samarbejdsmuligheder:</h3>
+                            <div class="space-y-3 text-sm lg:text-base">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-green">✨</span>
+                                    <span>Events og workshops</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-green">📸</span>
+                                    <span>Kampagner og fotoshoots</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-green">🤝</span>
+                                    <span>Brand-partnerskaber</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-energetic-green">💡</span>
+                                    <span>Inspirerende indhold</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-energetic-blue font-medium text-lg">
+                            👉 Er du interesseret i et samarbejde?<br />
+                            Kontakt mig direkte på kontakt@sophiewagner.dk eller via kontaktformularen – jeg glæder mig til at høre fra dig!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="py-24 lg:py-32 bg-soft-gray relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-energetic-blue/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-energetic-green/5 rounded-full blur-3xl"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16 lg:mb-20">
+                <span class="inline-block px-6 py-3 bg-energetic-blue/10 text-energetic-blue font-medium tracking-widest text-xs uppercase rounded-full mb-12 animate-on-scroll">
+                    Kontakt
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-light text-dark-gray mb-8 lg:mb-12 leading-tight animate-on-scroll">
+                    Lad os <em class="text-energetic-green">starte</em><br />
+                    din rejse
+                </h2>
+                <p class="text-lg lg:text-xl text-dark-gray/70 leading-relaxed font-light max-w-4xl mx-auto animate-on-scroll">
+                    Book en gratis konsultation og lad os snakke om dine mål, udfordringer 
+                    og hvordan jeg kan hjælpe dig med at skabe den forandring, du ønsker.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
+                <!-- Contact Form -->
+                <div class="animate-on-scroll">
+                    <div class="bg-fresh-white/90 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-warm border border-energetic-blue/10">
+                        <h3 class="text-2xl lg:text-3xl font-serif font-light text-dark-gray mb-8 lg:mb-12">
+                            Book din gratis konsultation
+                        </h3>
+                        
+                        <form id="contact-form" class="space-y-6 lg:space-y-8">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-dark-gray/70 mb-3 tracking-wide uppercase">
+                                        Fulde navn *
+                                    </label>
+                                    <input type="text" id="name" name="name" required class="w-full px-6 py-4 bg-soft-gray/50 border border-energetic-blue/20 rounded-2xl focus:outline-none focus:border-energetic-blue focus:bg-fresh-white transition-all duration-300 font-light" placeholder="Dit fulde navn">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-dark-gray/70 mb-3 tracking-wide uppercase">
+                                        Telefon
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-6 py-4 bg-soft-gray/50 border border-energetic-blue/20 rounded-2xl focus:outline-none focus:border-energetic-blue focus:bg-fresh-white transition-all duration-300 font-light" placeholder="Dit telefonnummer">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-dark-gray/70 mb-3 tracking-wide uppercase">
+                                    Email *
+                                </label>
+                                <input type="email" id="email" name="email" required class="w-full px-6 py-4 bg-soft-gray/50 border border-energetic-blue/20 rounded-2xl focus:outline-none focus:border-energetic-blue focus:bg-fresh-white transition-all duration-300 font-light" placeholder="din@email.dk">
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-dark-gray/70 mb-3 tracking-wide uppercase">
+                                    Interesseret i
+                                </label>
+                                <select id="service" name="service" class="w-full px-6 py-4 bg-soft-gray/50 border border-energetic-blue/20 rounded-2xl focus:outline-none focus:border-energetic-blue focus:bg-fresh-white transition-all duration-300 font-light">
+                                    <option value="">Vælg en ydelse</option>
+                                    <option value="personal-training">Personlig Træning</option>
+                                    <option value="online-coaching">Online Coaching</option>
+                                    <option value="corporate-training">Firma Træning</option>
+                                    <option value="pilates">Hjemme Pilates</option>
+                                    <option value="consultation">Gratis Konsultation</option>
+                                    <option value="collaboration">Samarbejde</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-dark-gray/70 mb-3 tracking-wide uppercase">
+                                    Besked
+                                </label>
+                                <textarea id="message" name="message" rows="6" class="w-full px-6 py-4 bg-soft-gray/50 border border-energetic-blue/20 rounded-2xl focus:outline-none focus:border-energetic-blue focus:bg-fresh-white transition-all duration-300 font-light resize-none" placeholder="Fortæl mig om dine mål og hvad du gerne vil opnå..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-energetic-blue text-fresh-white py-4 lg:py-5 rounded-full hover:bg-deep-blue hover:shadow-warm-xl transition-all duration-500 font-medium tracking-wide text-sm uppercase transform hover:scale-105 flex items-center justify-center gap-3">
+                                Send besked
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="success-message" class="hidden text-center py-12">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif text-dark-gray mb-4">Tak for din besked!</h3>
+                            <p class="text-dark-gray/70 font-light">
+                                Jeg vender tilbage til dig inden for 24 timer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info & Sophie Image -->
+                <div class="animate-on-scroll space-y-8 lg:space-y-12">
+                    <!-- Sophie's Image -->
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-energetic-blue/5 rounded-2xl blur-xl"></div>
+                        <div class="relative overflow-hidden rounded-2xl shadow-warm-xl">
+                            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Sophie Wagner klar til at hjælpe dig" class="w-full h-64 lg:h-80 object-cover transform group-hover:scale-105 transition-transform duration-2000">
+                            <div class="absolute inset-0 bg-gradient-to-t from-energetic-blue/20 via-transparent to-transparent"></div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="space-y-6 lg:space-y-8">
+                        <div class="bg-fresh-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-energetic-blue/10">
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 bg-energetic-blue/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-energetic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-serif font-light text-dark-gray mb-2">Email</h3>
+                                    <p class="text-dark-gray/70 font-light">kontakt@sophiewagner.dk</p>
+                                    <p class="text-sm text-dark-gray/50 font-light mt-1">Jeg svarer inden for 24 timer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-fresh-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-energetic-blue/10">
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 bg-energetic-blue/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-energetic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-serif font-light text-dark-gray mb-2">Telefon</h3>
+                                    <p class="text-dark-gray/70 font-light">+45 23 45 67 89</p>
+                                    <p class="text-sm text-dark-gray/50 font-light mt-1">Hverdage 9-17, weekend efter aftale</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-fresh-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-energetic-blue/10">
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 bg-energetic-blue/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-energetic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-serif font-light text-dark-gray mb-2">Lokation</h3>
+                                    <p class="text-dark-gray/70 font-light">København & online</p>
+                                    <p class="text-sm text-dark-gray/50 font-light mt-1">Hjemme, udendørs eller i mit studio</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-fresh-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-energetic-blue/10">
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 bg-energetic-blue/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-energetic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-serif font-light text-dark-gray mb-2">Åbningstider</h3>
+                                    <div class="text-dark-gray/70 font-light space-y-1">
+                                        <p>Mandag - Fredag: 6:00 - 20:00</p>
+                                        <p>Lørdag: 8:00 - 16:00</p>
+                                        <p>Søndag: Efter aftale</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-fresh-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-dark-gray via-dark-gray/95 to-energetic-blue/20"></div>
+        <div class="absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-energetic-blue/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-24">
+            <div class="grid lg:grid-cols-4 gap-12 lg:gap-16">
+                <!-- Brand Section -->
+                <div class="lg:col-span-2">
+                    <div class="text-3xl lg:text-4xl font-serif font-light mb-6 lg:mb-8 text-fresh-white tracking-widest">
+                        SOPHIE WAGNER
+                    </div>
+                    <p class="text-fresh-white/80 mb-8 lg:mb-12 font-light text-lg leading-relaxed max-w-md">
+                        Certificeret personal træner og kostvejleder med specialisering i 
+                        styrketræning, funktionel movement, pilates og ernæring. Find din styrke, skab balance.
+                    </p>
+                    
+                    <!-- Social Media -->
+                    <div class="flex space-x-6">
+                        <a href="https://instagram.com/sophiewagner_fitness" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                            <svg class="w-5 h-5 text-energetic-blue" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                            <svg class="w-5 h-5 text-energetic-blue" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-energetic-blue/20 rounded-full flex items-center justify-center hover:bg-energetic-blue/30 hover:scale-110 transition-all duration-500">
+                            <svg class="w-5 h-5 text-energetic-blue" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg lg:text-xl font-serif font-medium text-fresh-white mb-6 lg:mb-8">Hurtige Links</h3>
+                    <div class="space-y-4">
+                        <a href="#om-sophie" class="block text-fresh-white/80 hover:text-energetic-blue transition-all duration-300 font-light">
+                            Om Sophie
+                        </a>
+                        <a href="#ydelser" class="block text-fresh-white/80 hover:text-energetic-blue transition-all duration-300 font-light">
+                            Ydelser
+                        </a>
+                        <a href="#priser" class="block text-fresh-white/80 hover:text-energetic-blue transition-all duration-300 font-light">
+                            Priser
+                        </a>
+                        <a href="#kontakt" class="block text-fresh-white/80 hover:text-energetic-blue transition-all duration-300 font-light">
+                            Kontakt
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg lg:text-xl font-serif font-medium text-fresh-white mb-6 lg:mb-8">Kontakt Sophie</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-energetic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-fresh-white/90 font-light">kontakt@sophiewagner.dk</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-energetic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-fresh-white/90 font-light">+45 23 45 67 89</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-energetic-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-energetic-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-fresh-white/90 font-light">København & online</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="border-t border-energetic-blue/20 mt-16 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="text-fresh-white/60 font-light text-sm">
+                        © 2025 Sophie Wagner. Alle rettigheder forbeholdes.
+                    </div>
+                    <div class="text-fresh-white/60 font-light text-sm">
+                        <a href="https://panthure.dk" target="_blank" rel="noopener noreferrer" class="hover:text-energetic-blue transition-colors duration-300">
+                            Lavet af Panthure.dk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright Notice - Hidden but present for SEO -->
+        <!-- 
+            Website Design & Development by Panthure.dk
+            Premium web solutions for fitness professionals
+            Copyright © 2025 Panthure.dk - All rights reserved
+        -->
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-8 lg:bottom-10 right-6 lg:right-10 w-14 lg:w-16 h-14 lg:h-16 bg-energetic-blue text-fresh-white rounded-full shadow-warm-xl hover:bg-deep-blue transition-all duration-500 flex items-center justify-center z-50 hover:scale-110 backdrop-blur-sm opacity-0 invisible">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
 </html>
